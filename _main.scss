@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    background-image: url(img/topback.jpg);
+    width: 1022px;
+    height: 1440px;
+    &__title{
+        color: red;
+    }
+}
