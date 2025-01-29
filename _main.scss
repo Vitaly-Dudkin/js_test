@@ -3,11 +3,93 @@
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 .header{
     background-image: url(img/topback.jpg);
-    width: 1022px;
-    height: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 788px;
+
     &__title{
-        color: red;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: left;
+        color: #FFFFFF;
+        padding-top: 217px;
+        padding-bottom: 32px;
+        width: 788px;
     }
+
+    &__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        color: #ccc;
+        width: 482px;
+        text-align: left;
+        margin-bottom: 44px;
+    }
+
+    &__button{
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: red;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.menu{
+    background-image: url(img/picture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 556px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    &__link{
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 128px;
+        position: relative; /* Устанавливаем относительное позиционирование для родителя */
+        display: inline-block; /* Чтобы элементы располагались корректно */
+        margin: 10px; /* Отступы между элементами */
+    }
+}
+
+.menu__link img {
+    display: block; /* Убираем лишние отступы под изображением */
+}
+
+.bottomtext {
+    position: absolute; /* Абсолютное позиционирование для текста */
+    bottom: 10px; /* Расположение текста от нижней грани изображения */
+    left: 10px; /* Расположение текста от левой грани изображения */
+    color: white; /* Цвет текста */
+    background-color: transparent; /* прозрачный фон для читаемости */
+    padding: 5px; /* Отступы вокруг текста */
 }
