@@ -45,7 +45,8 @@ body {
   text-align: left;
   margin-bottom: 44px;
 }
-.header__button {
+
+.button {
   width: 234px;
   height: 48px;
   border-radius: 30px;
@@ -61,11 +62,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 556px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
+  padding-bottom: 128px;
 }
 .menu__link {
   color: #FFFFFF;
@@ -76,6 +77,8 @@ body {
   position: relative; /* Устанавливаем относительное позиционирование для родителя */
   display: inline-block; /* Чтобы элементы располагались корректно */
   margin: 10px; /* Отступы между элементами */
+  height: 300px;
+  width: 378px;
 }
 
 .menu__link img {
@@ -89,4 +92,78 @@ body {
   color: white; /* Цвет текста */
   background-color: transparent; /* прозрачный фон для читаемости */
   padding: 5px; /* Отступы вокруг текста */
+}
+
+.section {
+  background-image: url(img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  padding-top: 282px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.content__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+.content__text {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.picture {
+  width: 485px;
+  height: 333px;
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: 16 px;
+    padding-right: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    width: 343px;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .header__button {
+    height: 48px;
+    font-size: 18px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu__link {
+    width: 343px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -46,16 +46,18 @@ body{
         margin-bottom: 44px;
     }
 
-    &__button{
-        width: 234px;
-        height: 48px;
-        border-radius: 30px;
-        background-color: red;
-        color: #FFFFFF;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-    }
+
+}
+
+.button{
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: red;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .menu{
@@ -63,11 +65,11 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 556px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
+    padding-bottom: 128px;
 
     &__link{
         color: #FFFFFF;
@@ -78,6 +80,8 @@ body{
         position: relative; /* Устанавливаем относительное позиционирование для родителя */
         display: inline-block; /* Чтобы элементы располагались корректно */
         margin: 10px; /* Отступы между элементами */
+        height: 300px;
+        width: 378px;
     }
 }
 
@@ -92,4 +96,46 @@ body{
     color: white; /* Цвет текста */
     background-color: transparent; /* прозрачный фон для читаемости */
     padding: 5px; /* Отступы вокруг текста */
+}
+
+.section {
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    padding-top: 282px;
+
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__title{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    &__text{
+        color: #ccc;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+
+.picture {
+    width: 485px;
+    height: 333px;
+
 }
