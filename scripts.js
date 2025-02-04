@@ -18,3 +18,15 @@ function getSeason() {
         alert('number can be less than 13 and more than 0')
     }
 }
+
+function guessFruits() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
+    alert(list)
+    let fruit1 = prompt('Input fruit number1')
+    let fruit2 = prompt('Input fruit number2')
+    if (list.includes(fruit1) && list.includes(fruit2)) {
+        alert('you win')
+    } else {
+        alert('you lose')
+    }
+}
